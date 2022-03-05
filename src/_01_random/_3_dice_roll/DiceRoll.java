@@ -49,7 +49,7 @@ public class DiceRoll {
 			// 1. Make randomChoice equal to a random number between 1 and 6
 			Random rand = new Random();
 			int randomChoice = rand.nextInt(6)+1;
-
+			
 			// 2. Fix the code below so that it displays the correct image
 			if (randomChoice == 1) {
 				label.setIcon(oneImg);
@@ -64,8 +64,7 @@ public class DiceRoll {
 			} else if (randomChoice== 6){
 				label.setIcon(sixImg);
 			}
-		}
-
+		
 		panel.setPreferredSize(new Dimension(700, 700));
 		panel.add(rollButton);
 		panel.add(label);
@@ -74,8 +73,8 @@ public class DiceRoll {
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		window.pack();
 		
-		}
-		
+		});
+	}
 	
 	
 	public static void main(String[] args) {
