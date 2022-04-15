@@ -15,6 +15,7 @@ void setup() {
     size(800, 200);
     
     //1. Set the variable named x to 50.
+x=50;
 }
 
 void draw() {
@@ -27,7 +28,9 @@ void draw() {
     //3. Make the ellipse a nice color
 
     //4. If the mouse is pressed change the x value so that the dot moves to the right
-
+if(mousePressed){
+ x += 5;
+}
     //5. If your dot moves slowly, make it move faster. If it moves too quickly, slow it down
     //  (you have to figure out what part of your code to change)
 
@@ -35,23 +38,27 @@ void draw() {
     //   A playSound() method is provided (you have to uncomment the code at the bottom of this program to get this to work)
     
 
-}
 
-/*
-import ddf.minim.*;
-boolean soundPlayed = false;
-void playSound() {
+
+
+
+fill(#000000);
+rect(700, 0, 50, 50);
+rect(700, 100, 50, 50);
+rect(750, 50, 50, 50);
+rect(750, 150, 50, 50);
+fill(#FFFFFF);
+rect(700, 50, 50, 50);
+rect(750, 100, 50, 50);
+rect(750, 0, 50, 50);
+rect(700, 150, 50, 50);
+fill(#00FFC1);
+      ellipse(x, 100, 50, 50);
+
+if(x >= 750){
   
-  if (canPlaySounds) {
-    if (!soundPlayed) {
-        Minim minim = new Minim(this);
-        AudioSample sound = minim.loadSample("ding.wav");
-        sound.trigger();
-        soundPlayed = true;
-    }
-  }
   fill(0);
   textSize(36);
   text("WINNER!!", width/2, height/2);
 }
-*/
+}
