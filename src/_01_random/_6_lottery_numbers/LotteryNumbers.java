@@ -11,7 +11,7 @@ public class LotteryNumbers {
 		String sdfsdfsdf = "";
 		for(int d = 0; d<6; d++) {
 		
-				int i = number.nextInt(1);
+				int i = number.nextInt(2);
 				sdfsdfsdf+=" " + String.valueOf(i);
 			
 		}
